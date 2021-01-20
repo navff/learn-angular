@@ -1,0 +1,20 @@
+<div class="row">
+  <h2 class="mt-4">Shopping List</h2>
+</div>
+<app-shopping-edit
+  (ingredientAdded)="onIngredientAdded($event)"
+></app-shopping-edit>
+
+<div class="row">
+  <div class="col-md-12 pl-0">
+    <hr/>
+    <ul class="list-group">
+      <a class="list-group-item"
+         style="cursor: pointer"
+         *ngFor="let ingredient of ingredients"
+      >
+        {{ ingredient.name}} ({{ ingredient.amount }})
+      </a>
+    </ul>
+  </div>
+</div>

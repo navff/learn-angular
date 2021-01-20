@@ -1,0 +1,36 @@
+<div class="row mt-4">
+  <br>
+  <div class="col-xs-12">
+    <form>
+      <div class="row">
+        <div class="col-sm-5 form-group">
+          <label for="name">Name</label>
+          <input type="text"
+                 id="name"
+                 class="form-control"
+                 #nameInput
+          >
+        </div>
+        <div class="col-sm-3 form-group">
+          <label for="amount">Amount</label>
+          <input type="number"
+                 min="1"
+                 id="amount"
+                 class="form-control"
+                 #amountInput
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 ml-3">
+          <button type="submit"
+                  class="btn btn-sm btn-success mr-1"
+                  (click)="onAddIngredient()"
+          >Add</button>
+          <button type="button" class="btn btn-sm btn-danger mr-1">Delete</button>
+          <button type="button" class="btn btn-sm btn-primary mr-1">Clear</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
