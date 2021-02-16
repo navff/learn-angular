@@ -5,26 +5,24 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
-      <li class="nav-item">
+      <li class="nav-item"
+        routerLinkActive="active">
         <a class="nav-link"
-           href="#"
-           (click)="onMenuClick($event)"
-           data-navigate_to="recipes"
+           routerLink="/recipes"
         >Recipes </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item"
+          routerLinkActive="active">
         <a class="nav-link"
-           href="#"
-           (click)="onMenuClick($event)"
-           data-navigate_to="shopping_list">Shopping list</a>
+           routerLink="/shopping-list">Shopping list</a>
       </li>
       <li class="nav-item dropdown" appDropdown>
-        <a class="nav-link dropdown-toggle" href="#" role="button">
+        <a class="nav-link dropdown-toggle" role="button">
           Manage
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Send data</a>
-          <a class="dropdown-item" href="#" >Fetch data</a>
+          <a class="dropdown-item" style="cursor: pointer">Send data</a>
+          <a class="dropdown-item" style="cursor: pointer">Fetch data</a>
         </div>
       </li>
     </ul>
